@@ -7,4 +7,6 @@
 			loaderClass="org.apache.catalina.loader.ParallelWebappClassLoader"
 			delegate="false" reloadable="false"/>
 
+  <Resources cachingAllowed="true" cacheMaxSize="10240"/>
+
 </Context>

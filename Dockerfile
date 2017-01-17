@@ -1,7 +1,7 @@
 FROM glivron/openjdk-8
 
 # ---------------------------------------------------------------------- tomcat8
-ENV TOMCAT_VERSION 8.5.8
+ENV TOMCAT_VERSION 8.5.11
 
 RUN (curl -L http://www.us.apache.org/dist/tomcat/tomcat-8/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz | gunzip -c | tar x) \
  && mv apache-tomcat-$TOMCAT_VERSION /apache-tomcat \

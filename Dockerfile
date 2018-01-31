@@ -3,7 +3,7 @@ FROM glivron/openjdk-8
 WORKDIR /var/lib
 
 # ---------------------------------------------------------------------- tomcat8
-ENV TOMCAT_VERSION 8.5.23
+ENV TOMCAT_VERSION 8.5.27
 
 RUN (curl -L https://www.apache.org/dist/tomcat/tomcat-8/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.tar.gz | gunzip -c | tar x) \
  && mv apache-tomcat-$TOMCAT_VERSION tomcat \
